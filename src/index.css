@@ -163,41 +163,34 @@
 
 /* Mairie */
 
-.mairie{
+.arche{
     height: fit-content;
-    width: 100%;
-    background-image: url('/fond-element-haut.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    width: 90vw;
+    background-image: url('/fond-m6.png');
+    background-repeat: repeat;
+    background-size: contain;
     overflow: hidden;
+    margin: auto;
+    border-radius: 50% / 150px;
 }
 
-.mairie-card{
+.arche-card{
     height: fit-content;
-    width: 85%;
-    margin: 60px auto 30px auto;
+    width: 80vw;
+    margin: 20px auto;
     padding: 120px 0;
-    background-color: #E1C3A3;
-    border: none;
+    background-image: url('/fond-arche-m6.png');
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-top-left-radius: 50% 150px;
-    border-top-right-radius: 50% 150px;
-    border-bottom-left-radius: 50% 150px;
-    border-bottom-right-radius: 50% 150px;
+    border-radius: 50% / 150px;
 }
 
-.fleur-fonce-haut{
-    width: 180px;
-    height: 230px;
-    position: absolute;
-    top: -10px;
-    left: -15px;
-    transform: rotate(45deg);
+.arche-image{
+    height: 100px;
+    width: ;
 }
 
 
@@ -318,118 +311,6 @@
     bottom: -10px;
     right: -15px;
     transform: rotate(45deg);
-}
-
-
-/* Henne */
-
-.henne{
-    height: fit-content;
-    width: 100%;
-    background-image: url('/fond-element-bas.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-}
-
-.henne-card{
-    height: fit-content;
-    width: 85%;
-    margin: 60px auto 30px auto;
-    padding: 120px 0;
-    background-color: #966A45;
-    border: none;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-top-left-radius: 50% 150px;
-    border-top-right-radius: 50% 150px;
-    border-bottom-left-radius: 50% 150px;
-    border-bottom-right-radius: 50% 150px;
-}
-
-
-.henne-title{
-    height: fit-content;
-    color: #402E20;
-    font-family: "Antic Didone", serif;
-    font-weight: 400;
-    text-shadow: 2px 0 4px rgba(0, 0, 0, 0.6);
-}
-
-.henne-logo{
-    margin-top: 5px;
-    width: 45px;
-    height: 30px;
-}
-
-
-.henne-noms{
-    width: 100%;
-    color: #402E20;
-    font-family: 'Amsterdam', sans-serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin: 30px auto auto auto;
-}
-
-.henne-nom-1{
-    font-size: 40px;
-    font-weight: 100;
-}
-
-.henne-and{
-    font-weight: 100;
-    font-size: 25px;
-    transform: translateX(-10px) translateY(10px);
-}
-
-.henne-nom-2{
-    height: fit-content;
-    font-size: 40px;
-    font-weight: 100;
-}
-
-.henne-text, .henne-date, .henne-endroit{
-    font-family: "Antic Didone", serif;
-    text-align: center;
-    color: #402E20;
-    margin: 20px auto auto auto;
-}
-
-.waze-henne{
-    margin: 30px auto auto auto;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-}
-
-.waze-henne .waze-link{
-    color: #402E20;
-    font-family: "Antic Didone", serif;
-    font-style: italic;
-}
-
-.save-the-date-henne{
-    margin: 10px auto auto auto;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-}
-
-.save-the-date-henne .save-the-date-link{
-    color: #402E20;
-    font-family: "Antic Didone", serif;
-    font-style: italic;
 }
 
 
@@ -597,122 +478,6 @@
 .save-the-date-houppa .save-the-date-link{
     color: #271A11;
     font-family: "Antic Didone", serif;
-}
-
-
-/* Beach Party */
-
-.beach{
-    height: fit-content;
-    width: 100%;
-    background-image: url('/fond-element-bas.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-}
-
-.beach-card{
-    height: fit-content;
-    width: 85%;
-    margin: 60px auto 30px auto;
-    padding: 140px 0;
-    background-color: #DBC5A8;
-    border: none;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-top-left-radius: 50% 150px;
-    border-top-right-radius: 50% 150px;
-    border-bottom-left-radius: 50% 150px;
-    border-bottom-right-radius: 50% 150px;
-}
-
-
-.beach-title{
-    height: fit-content;
-    color: #5D412A;
-    font-family: "Antic Didone", serif;
-    font-weight: 400;
-    text-shadow: 2px 0 4px rgba(0, 0, 0, 0.6);
-}
-
-.beach-logo{
-    margin-top: 5px;
-    width: 45px;
-    height: 40px;
-}
-
-
-.beach-noms{
-    width: 100%;
-    color: #806548;
-    font-family: 'Amsterdam', sans-serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin: 30px auto auto auto;
-}
-
-.beach-nom-1{
-    font-size: 40px;
-    font-weight: 100;
-}
-
-.beach-and{
-    font-weight: 100;
-    font-size: 25px;
-    transform: translateX(-10px) translateY(10px);
-}
-
-.beach-nom-2{
-    height: fit-content;
-    font-size: 40px;
-    font-weight: 100;
-}
-
-.beach-text{
-    width: 70%;
-}
-
-.beach-text, .beach-date, .beach-endroit, .beach-dress-code{
-    font-family: "Antic Didone", serif;
-    text-align: center;
-    color: #5D412A;
-    margin: 20px auto auto auto;
-}
-
-.waze-beach{
-    margin: 30px auto auto auto;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-}
-
-.waze-beach .waze-link{
-    color: #5D412A;
-    font-family: "Antic Didone", serif;
-    font-style: italic;
-}
-
-.save-the-date-beach{
-    margin: 10px auto auto auto;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-}
-
-.save-the-date-beach .save-the-date-link{
-    color: #5D412A;
-    font-family: "Antic Didone", serif;
-    font-style: italic;
 }
 
 

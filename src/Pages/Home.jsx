@@ -18,11 +18,6 @@ function Home(){
             <p className='bsd'>בס"ד</p>
             <Musique />
             <Mairie />
-            <Henne />
-            <Houppa />
-            <BeachParty />
-            <Chabat />
-            <Response />
         </div>
 
     )
