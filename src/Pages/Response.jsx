@@ -9,13 +9,10 @@ function Response(){
     return(
 
         <div className="response">
-            <div className="response-card">
-                <img src="fleur-fonce-haut.png" className='fleur-fonce-haut' />
-                <h1 className="response-title">LA RÉPONSE</h1>
-                <p className='reponse-souhaite'>Réponse souhaitée dès réception</p>
-                <Form />
-                <img src="fleur-fonce-bas.png" className='fleur-fonce-bas' />
-            </div>
+            <p className="response-title">La Réponse</p>
+            <p className='reponse-souhaite'>Réponse souhaitée dès réception</p>
+            <Form />
+            <img src="fleur-bas-m6.png" className='fleur-bas' />
         </div>
 
     )

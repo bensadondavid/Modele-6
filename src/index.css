@@ -105,7 +105,6 @@
     display: flex;
     flex-direction: column;
     position: relative;
-
     background-image: url('/fond-arche-m6.png');
     background-position: center;
     background-repeat: repeat-y;
@@ -116,7 +115,7 @@
 .musique button{
     height: 40px;
     width: 40px;
-    border: solid black 1px;
+    border: solid #536493 1px;
     border-radius: 50%;
     position: fixed;
     bottom: 30px;
@@ -393,43 +392,29 @@
 .response{
     height: fit-content;
     width: 100%;
-    background-image: url('/fond-element-bas.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-}
-
-.response-card{
-    height: fit-content;
-    width: 85%;
-    margin: 60px auto 30px auto;
-    padding: 120px 0;
-    background-color: #E8D5BB;
-    border: none;
-    position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    border-top-left-radius: 50% 150px;
-    border-top-right-radius: 50% 150px;
-    border-bottom-left-radius: 50% 150px;
-    border-bottom-right-radius: 50% 150px;
+    align-items: center;
+    overflow: hidden;
 }
 
 .response-title{
     height: fit-content;
-    color: #402E20;
-    font-family: "Antic Didone", serif;
-    font-weight: 400;
-    text-shadow: 2px 0 4px rgba(0, 0, 0, 0.5);
+    color: #536493;
+    font-family: "Burgues";
+    font-size: 40px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-align: center;
 }
 
 .reponse-souhaite{
-    font-family: "Italianno", serif;
-    font-size: larger;
-    margin-bottom: 20px;
+    color: #536493;
+    font-family: 'Imperial Script', serif;
+    font-size: medium;
+    text-align: center;
+    margin-top: 10px;
 }
 
 
@@ -438,8 +423,8 @@
 form{
     height: fit-content;
     width: 100%;
-    font-family: "Antic Didone", serif;
-    color: #402E20;
+    font-family: 'New Icon', serif;
+    color: #536493;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -454,12 +439,9 @@ label{
     width: 85%;
     height: 20px;
     padding: 10px;
-    background-color: #DBC5A8;
-    border: #5D412A solid 1px;
-    border-top-left-radius: 50% 170px;
-    border-top-right-radius: 50% 170px;
-    border-bottom-left-radius: 50% 170px;
-    border-bottom-right-radius: 50% 170px;
+    border: none;
+    background-color: rgba(154, 141, 68, 0.37);
+    border-radius: 50% / 170px;
     margin-top: 5px;
 }
 
@@ -476,7 +458,7 @@ input[type = radio]{
     height: 15px;
     width: 15px;
     background-color: transparent; /* Couleur de fond */
-    border: 1px solid #5D412A; /* Bordure noire */
+    border: 1px solid #536493; /* Bordure noire */
     border-radius: 50%; /* Pas de bordure arrondie pour un effet carré */
     cursor: pointer;
     position: relative; /* Nécessaire pour positionner la flèche */
@@ -490,7 +472,7 @@ input[type = radio]{
     left: 4px; /* Position horizontale */
     width: 3px; /* Largeur de la flèche */
     height: 5px; /* Hauteur de la flèche */
-    border: solid #917F6C; /* Couleur de la flèche */
+    border: solid #536493; /* Couleur de la flèche */
     border-width: 0 2px 2px 0; /* Taille des lignes de la flèche */
     transform: rotate(45deg); /* Inclinaison pour créer une flèche */
 }
@@ -499,12 +481,9 @@ textarea{
     width: 85%;
     height: 40px;
     padding: 10px;
-    background-color: #DBC5A8;
-    border: #5D412A solid 1px;
-    border-top-left-radius: 50% 170px;
-    border-top-right-radius: 50% 170px;
-    border-bottom-left-radius: 50% 170px;
-    border-bottom-right-radius: 50% 170px;
+    border: none;
+    background-color: rgba(154, 141, 68, 0.37);
+    border-radius: 50% / 170px;
     margin-left: 15px;
 }
 
@@ -514,10 +493,12 @@ textarea{
     margin: 15px auto;
     border: none;
     border-radius: 20px;
-    background-color: #402E20;
-    color: #C6A58A;
-    font-family: "Antic Didone", serif;
+    background-color: rgba(83, 100, 147, 0.58);
+    color: #E0EFFE;
+    font-family: 'New Icon', serif;
+    font-size: x-large;
     letter-spacing: 2px;
+    padding-top: 6px;
 }
 
 /* Presence */
@@ -545,4 +526,12 @@ textarea{
     display: flex;
     flex-direction: column;
     margin-left: 15px;
+}
+
+
+.fleur-bas{
+    margin-top: 20px;
+    height: 110px;
+    width: 80px;
+    transform: rotate(20deg);
 }

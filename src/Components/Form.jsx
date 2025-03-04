@@ -87,10 +87,10 @@ function Form(){
    return(
        <>
         <form method='POST' onSubmit={handleSubmit}>
-                <label>Nom*
+                <label>Nom* <br />
                 <input type="text" name="nom" className='nom' value={formData.nom} required onChange={handleChange}/>
                 </label>
-                <label>Prénom*
+                <label>Prénom* <br />
                 <input type="text" name="prenom" className='prenom' value={formData.prenom} required onChange={handleChange}/>
                 </label>
                 <div className="presence">
