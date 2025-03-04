@@ -105,7 +105,11 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    background-color: rgb(239, 246, 248);
+
+    background-image: url('/fond-arche-m6.png');
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
 }
 
 
@@ -211,63 +215,47 @@
 /* Houppa */
 
 .houppa{
+    width: 100%;
+    height: fit-content;
+}
+
+.img-houppa{
     height: fit-content;
     width: 100%;
-    background-image: url('/fond-element-haut.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.logo-above-houppa{
-    width: 320px;
-    height: 140px;
-    margin: 20px auto 0 auto;
+.arche-image-houppa{
+    height: 120px;
+    width: 80%;
+}
+
+.logo-houppa{
+    height: 130px;
+    width: 100px;
+    transform: translateY(-10px);
 }
 
 .kol-sasson{
-    height: auto;
-    width: auto;
+    width: 75%;
+    height: 120px;
+    transform: translateY(-90px);
 }
-
-.houppa-card{
-    height: fit-content;
-    width: 85%;
-    margin: 0 auto 30px auto;
-    padding: 120px 0;
-    background-color: #917F6C;
-    border: none;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-top-left-radius: 50% 150px;
-    border-top-right-radius: 50% 150px;
-    border-bottom-left-radius: 50% 150px;
-    border-bottom-right-radius: 50% 150px;
-    transform: translateY(-30px);
-}
-
 
 .houppa-title{
     height: fit-content;
-    color: #271A11;
-    font-family: "Antic Didone", serif;
-    font-weight: 400;
-    text-shadow: 2px 0 4px rgba(0, 0, 0, 0.6);
+    color: #536493;
+    font-family: "Burgues";
+    font-size: 40px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-align: center;
+    transform: translateY(-30px);
 }
 
-.houppa-logo{
-    margin-top: 5px;
-    height: 35px;
-    width: 30px;
-}
 
 .parents{
     width: 100%;
@@ -278,77 +266,55 @@
     margin: 15px auto 10px auto;
 }
 
-.parents-fille{
-    font-family: "Antic Didone", serif;
+.parents-fille, .parents-garcon{
+    font-family: 'New Icon';
     font-size: small;
-}
-
-.parents-garcon{
-    font-family: "Antic Didone", serif;
-    font-size: small;
+    color: #536493;
 }
 
 .houppa-noms{
     width: 100%;
-    color: #271A11;
-    font-family: 'Amsterdam', sans-serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin: 30px auto auto auto;
+    color: #536493;
+    font-family: "Burgues";
+    text-align: center;
+    margin: 40px auto auto auto;
+    font-size: 50px;
+    letter-spacing: 3px;
 }
 
-.houppa-nom-1{
-    font-size: 40px;
-    font-weight: 100;
-}
-
-.houppa-and{
-    font-weight: 100;
-    font-size: 25px;
-    transform: translateX(-10px) translateY(10px);
-}
-
-.houppa-nom-2{
-    height: fit-content;
-    font-size: 40px;
-    font-weight: 100;
-}
 
 .houppa-text{
     width: 80%;
-    font-family: "Antic Didone", serif;
+    font-family: 'New Icon';
     text-align: center;
-    color: #271A11;
-    margin: 20px auto auto auto;
+    color: #536493;
+    margin: 30px auto auto auto;
 }
 
 .houppa-date{
-    font-family: "Antic Didone", serif;
+    font-family: 'New Icon';
     text-align: center;
-    color: #271A11;
-    margin: 20px auto auto auto;
+    color: #536493;
+    margin: 10px auto auto auto;
 }
 
 .houppa-endroit{
-    font-family: "Antic Didone", serif;
+    font-family: 'New Icon';
     text-align: center;
-    color: #271A11;
-    margin: 20px auto auto auto;
+    color: #536493;
+    font-size: 25px;
+    margin: 30px auto auto auto;
 }
 
 .pensee{
-    margin: 20px auto auto auto;
-    font-family: "Antic Didone", serif;
+    margin: 30px auto auto auto;
+    font-family: "Imperial Script", cursive;
     text-align: center;
-    color: #271A11;
+    color: #536493;
     font-style: italic;
 }
 
-.waze-houppa{
-    margin: 30px auto auto auto;
-    height: fit-content;
+.waze-houppa,.save-the-date-houppa{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -356,24 +322,16 @@
     gap: 5px;
 }
 
-.waze-houppa .waze-link{
-    color: #271A11;
-    font-family: "Antic Didone", serif;
+.waze-houppa{
+    margin: 30px 0 0 0;
 }
 
-.save-the-date-houppa{
-    margin: 10px auto auto auto;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
+.waze-link,.save-the-date-link{
+    color: #536493;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 100;
+    text-align: center
 }
-
-.save-the-date-houppa .save-the-date-link{
-    color: #271A11;
-    font-family: "Antic Didone", serif;
-}
-
 
 /* Chabat */
 
