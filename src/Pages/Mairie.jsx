@@ -12,11 +12,9 @@ function Mairie(){
         <div className="arche">
             <div className="arche-card">
                 <img src="arche-m6.png" className='arche-image' />
-                <h1 className='mairie-title'>LA MAIRIE</h1>
+                <h1 className='mairie-title'>La Mairie</h1>
                 <div className="mairie-noms">
-                    <h1 className='mairie-nom-1'>Noa</h1>
-                    <h1 className='mairie-and'>&</h1>
-                    <h1 className='mairie-nom-2'>David</h1>
+                    <p>Noa & David</p>
                 </div>
                 <p className='mairie-text'>Se diront</p>
                 <h2 className='mairie-oui'>"Oui"</h2>

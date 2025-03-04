@@ -8,6 +8,21 @@
     display: none !important;
 }
 
+@font-face {
+    font-family: 'New Icon';
+    src: url('./assets/fonts/New-Icon-Serif-condensed.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Burgues';
+    src: url('./assets/fonts/burgues-script.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 /* Too Big */
 
 .too-big{
@@ -55,47 +70,6 @@
     color: #271A11;
 }
 
-.logo-entry{
-    height: fit-content;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo-av-entry{
-    height: 180px;
-    width: 350px;
-}
-
-.entry-date{
-    font-family: "Alice", serif;
-    color: #5D412A;
-}
-
-@font-face {
-    font-family: 'Amsterdam';
-    src: url('./assets/fonts/amsterdam_4/amsterdam-four.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-.entry-noms{
-    width: 100%;
-    height: fit-content;
-    font-family: 'Amsterdam', sans-serif;
-    font-size: 50px;
-    text-align: center;
-    color: #5D412A;
-}
-
-.and{
-    font-size: 20px;
-    margin: auto 30px auto auto;
-}
-
-
 .countdown{
     width: 90%;
     height: fit-content;
@@ -120,22 +94,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-.invit-link{
-    height: fit-content;
-    transform: translateY(-20px);
-}
-
-.invit-button{
-    height: 60px;
-    width: 200px;
-    background-color: rgba(198, 165, 138, 0.39);
-    color: #271A11;
-    border: none;
-    border-radius: 30px;
-    font-family: "Antic Didone", serif;
-    font-size: medium;
 }
 
 
@@ -170,7 +128,7 @@
     background-repeat: repeat;
     background-size: contain;
     overflow: hidden;
-    margin: auto;
+    margin: 100px auto;
     border-radius: 50% / 150px;
 }
 
@@ -178,7 +136,7 @@
     height: fit-content;
     width: 80vw;
     margin: 20px auto;
-    padding: 120px 0;
+    padding: 10px 0 100px 0;
     background-image: url('/fond-arche-m6.png');
     position: relative;
     display: flex;
@@ -189,94 +147,44 @@
 }
 
 .arche-image{
-    height: 100px;
-    width: ;
+    height: 120px;
+    width: 90%;
 }
 
 
 .mairie-title{
     height: fit-content;
-    color: #806548;
-    font-family: "Antic Didone", serif;
-    font-weight: 400;
-    text-shadow: 4px 0 4px rgba(0, 0, 0, 0.5);
+    color: #536493;
+    font-family: "Burgues";
+    font-size: 30px;
+    font-weight: 100;
 }
 
-.bagues-mairie{
-    width: 40px;
-    height: 30px;
-}
 
 .mairie-noms{
-    color: #806548;
-    font-family: 'Amsterdam', sans-serif;
+    color: #536493;
+    font-family: "Burgues";
     display: flex;
     flex-direction: row;
-    margin: 90px auto auto auto;
-}
-
-.mairie-nom-1{
-    transform: translateY(-70px);
-    font-size: 50px;
-    font-weight: 100;
-}
-
-.mairie-and{
-    font-weight: 100;
-}
-
-.mairie-nom-2{
-    height: fit-content;
-    transform: translateY(10px);
-    font-size: 50px;
+    margin: 20px auto auto auto;
+    font-size: 40px;
+    gap: 20px;
     font-weight: 100;
 }
 
 
-.mairie-text{
-    margin: 40px auto auto auto;
-    font-family: "Antic Didone", serif;
-    color: #806548;
+.mairie-text,.mairie-oui,.mairie-date,
+.mairie-endroit,.mairie-suite{
+    width: 80%;
     height: fit-content;
-}
-
-.mairie-oui{
-    margin: 10px auto auto auto;
-    font-family: "Antic Didone", serif;
-    font-size: 30px;
-    color: #806548;
-    height: fit-content;
-}
-
-.mairie-date{
-    height: fit-content;
-    margin: 40px auto auto auto;
-    font-family: "Antic Didone", serif;
-    color: #806548;
-    font-size: 20px;
+    color: #536493;
+    font-family: 'New Icon';
+    font-weight: 100;
     text-align: center;
+    margin: 10px auto;
 }
 
-.mairie-endroit{
-    height: fit-content;
-    margin: 40px auto auto auto;
-    font-family: "Antic Didone", serif;
-    color: #806548;
-    text-align: center;
-}
-
-.mairie-suite{
-    height: fit-content;
-    width: 60%;
-    text-align: center;
-    margin: 40px auto auto auto;
-    font-family: "Antic Didone", serif;
-    color: #806548;
-}
-
-.waze-mairie{
-    margin: 30px auto auto auto;
-    height: fit-content;
+.waze-mairie,.save-the-date-mairie{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -284,35 +192,16 @@
     gap: 5px;
 }
 
-.waze-mairie .waze-link{
-    color: #806548;
-    font-family: "Antic Didone", serif;
-    font-style: italic;
+.waze-mairie{
+    margin: 20px 0 0 0;
 }
 
-.save-the-date-mairie{
-    margin: 10px auto auto auto;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
+.waze-link,.save-the-date-link{
+    color: #536493;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 100;
+    text-align: center
 }
-
-.save-the-date-mairie .save-the-date-link{
-    color: #806548;
-    font-family: "Antic Didone", serif;
-    font-style: italic;
-}
-
-.fleur-fonce-bas{
-    width: 180px;
-    height: 230px;
-    position: absolute;
-    bottom: -10px;
-    right: -15px;
-    transform: rotate(45deg);
-}
-
 
 /* Houppa */
 
