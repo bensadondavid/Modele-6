@@ -50,13 +50,25 @@
 .entry{
     height: 100%;
     width: 100%;
-    background-image: url('/fond-av.png');
+    background-image: url('/fond-m6.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.entry-card{
+    height: 95%;
+    width: 95%;
+    background-image: url('/fond-arche-m6.png');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    position: relative;
 }
 
 .bsd{
@@ -64,36 +76,60 @@
     position: absolute;
     top: 5px;
     right: 5px;
-    font-family: "Alice", serif;
-    font-weight: 400;
-    font-style: normal;
     color: #536493;
+}
+
+.entry-logo{
+    width: 140px;
+    height: 190px;
+    margin-top: 20px;
+}
+
+.entry-noms{
+    height: fit-content;
+    font-family: "Burgues";
+    font-size: 40px;
+    letter-spacing: 3px;
+    color: #536493;
+}
+
+.entry-date{
+    height: fit-content;
+    color: #536493;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transform: translateY(-20px);
 }
 
 .countdown{
     width: 90%;
     height: fit-content;
-    margin: 0 auto;
-    color: #402E20;
-    font-family: "Antic Didone", serif;
+    color: #536493;
+    font-family: "New Icon";
     font-weight: lighter;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 .time{
     text-align: center;
-    font-size: small;
-    background-color: rgba(198, 165, 138, 0.39);
-    border-radius: 28px;
-    height: 65px;
-    width: 65px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    font-size: 20px;
+}
+
+.invit-link{
+    height: fit-content;
+    transform: translateY(30px);
+    font-family: "New Icon";
+    text-decoration: none;
+    color: #536493;
+    font-size: 30px;
+}
+
+.entry-arche{
+    width: 70%;
+    height: 100px;
+    transform: rotate(180deg);
 }
 
 

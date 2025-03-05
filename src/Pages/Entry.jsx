@@ -10,14 +10,15 @@ function Entry(){
     return(
 
         <div className="entry">
-            <p className="bsd">בס"ד</p>
-            <div className="logo-entry">
-                <img src="logo-av.png" className='logo-av-entry' />
-                <p className='entry-date'>03 . 06 . 2024</p>
+            <div className="entry-card">
+                <p className="bsd">בס"ד</p>
+                <img src="logo-m6.png" className='entry-logo' />
+                <p className='entry-noms'>Noa & David</p>
+                <p className='entry-date'>11 . 20 . 2024</p>
+                <CountDown />
+                <Link to='/home' className='invit-link'>Voir l'invitation</Link>
+                <img src="arche-m6.png" className='entry-arche' />
             </div>
-            <p className="entry-noms">Victoria <span className='and'>&</span> Alone</p>
-            <CountDown />
-            <Link to='/home' className='invit-link'><button className='invit-button'>Voir l'invitation</button></Link>
         </div>
 
     )
