@@ -26,21 +26,23 @@
 /* Too Big */
 
 .too-big{
-    width: 100%;
-    height: 100vh;
-    background-image: url('/fond-element-haut.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #536493;
+    font-family: "New Icon";
+    background-color: #E0EFFE;
+    gap: 30px;
+}
+
+.logo-too-big{
+    width: 300px;
+    height: 300px;
 }
 
 .too-big h1{
     height: fit-content;
-    font-family: 'Amsterdam', sans-serif;
     text-align: center;
 }
 
